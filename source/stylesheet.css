@@ -1,0 +1,187 @@
+@import url('eric-meyer-reset.css');
+
+body {
+    font-family: TREBUCHET MS, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #000;
+}
+
+p {
+    padding: 10px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 400px;
+    /*background: url(img/header_planet.png);*/
+    background-size: cover;
+    color: #fff;
+    padding-top: 30px;
+    text-align: right;
+}
+
+#header h1 {
+    font-size: 72pt;
+}
+
+#header h2 {
+    font-size: 50pt;
+    font-style: italic;
+}
+
+.header {
+    color: white;
+    font-size: 30px;
+    background: black;
+    width: 100%;
+    margin-top: 1px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#aside .header {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    color: #000;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+#contentwrap {
+    display: table;
+    border-spacing: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#content {
+    display: table-cell;
+    background: #666;
+    vertical-align: top;
+    font-size: 18pt;
+}
+
+.column {
+    display: table-cell;
+    margin: 0 auto;
+    background: #4e4e4e;
+}
+
+.rounded-top-left {
+    padding-top: 50px;
+    border-top-left-radius: 60px;
+}
+
+.rounded-top-right {
+    padding-top: 50px;
+    border-top-right-radius: 60px;
+}
+
+.rounded-bottom-left {
+    border-bottom-left-radius: 60px;
+}
+
+.rounded-bottom-right {
+    border-bottom-right-radius: 60px;
+}
+
+.menu {
+    width: 300px;
+}
+
+.menu ul {
+    list-style: none;
+    font-size: 30px;
+}
+
+.menu li {
+    width: 250px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    color: #000;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.menu a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.aside {
+    width: 200px;
+    text-align: right;
+}
+
+#menu {
+}
+
+#aside {
+    overflow: hidden;
+}
+
+#aside h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    color: #000;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+#aside a {
+    font-size: 12px;
+    border-radius: 12px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.shelf {
+    background: #606060;
+    float: right;
+    width:80%;
+    border-top-left-radius: 25px;
+}
+
+a.link, a.link:visited {
+    background: #000;
+    color: #fff;
+}
+
+a.link:hover {
+    background: #fff;
+    color: #000;
+}
+
+#footerwrap {
+    display: table;
+    border-spacing: 0;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#footer {
+    display: table-cell;
+    height: 85px;
+    background: #666;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 25px;
+}
