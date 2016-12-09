@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= yield %>
+  </body>
+</html>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Solar system</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1 class="title">Unser Sonnensystem</h1>
+        <h2 class="subtitle">die Geschichte</h2>
+    </div>
+
+    <div id="contentwrap">
+        <div class="column rounded-top-left menu">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="index.html">Aktuelles</a></li>
+                <li><a href="index.html">Bildergalerie</a></li>
+                <li><a href="index.html">Teleskop</a></li>
+                <li><a href="index.html">Impressum</a></li>
+                <li><a href="index.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+        		<% yield %>
+        </div>
+        <div class="aside column rounded-top-right">
+            <div id="aside">
+                <h2>Bücher</h2>
+                <div class="shelf">
+                    <p>Astronomie für Einsteiger: Schritt für Schritt zur erfolgreichen Himmelsbeobachtung
+                        von Werner E. Celnik und Hermann-Michael Hahn</p>
+                    <img src="img/aside_buch1.jpg" alt="Astronomie für Einsteiger"/>
+
+                    <p>Gebundene Ausgabe</p>
+                    <p>EUR 17,99</p>
+
+                    <a href="#" class="link">bestellen</a>
+
+                    <p>Kosmos Himmelsjahr 2017: Sonne, Mond und Sterne im Jahreslauf
+                        von Hans-Ulrich Keller</p>
+                    <img src="img/aside_buch2.png" alt="Kosmos Himmelsjahr 2017"/>
+                    <p>Taschenbuch</p>
+                    <p>EUR 16,99</p>
+
+                    <a href="#" class="link">bestellen</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footerwrap">
+        <div class="column rounded-bottom-left menu"></div>
+        <div id="footer">
+            <p>Copyright 2016, Unser Sonnensystem Company</p>
+        </div>
+        <div class="column rounded-bottom-right aside"></div>
+    </div>
+</div>
+</body>
+</html>
