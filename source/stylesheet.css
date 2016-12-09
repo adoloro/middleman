@@ -141,6 +141,7 @@ p {
     font-size: 30px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    padding-right: 10px;
     background: #fff;
     color: #000;
     border-bottom-left-radius: 25px;
@@ -155,9 +156,10 @@ p {
 }
 
 .shelf {
-    background: #606060;
+    background: #111;
     float: right;
     width:80%;
+    color: #fff;
     border-top-left-radius: 25px;
 }
 
