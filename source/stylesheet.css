@@ -18,7 +18,7 @@ p {
 #header {
     box-sizing: border-box;
     height: 400px;
-    /*background: url(img/header_planet.png);*/
+    background: url(img/header_planet.png);
     background-size: cover;
     color: #fff;
     padding-top: 30px;
