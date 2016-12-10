@@ -8,7 +8,7 @@ title: Bildergalerie
 <h1 class="header">Bildergalerie</h1>
 <div class="slider">
   <% new.slice(0,8).each do |photo| %>
-      <a href="<%="#image#{photo[:index]}"%>"><img src="<%=photo[:thumbnail]%>" alt="<%= photo[:name] %>" /></a>
+      <a href="<%="#image#{photo[:index]}"%>"><img src="<%=photo[:thumbnail]%>" class="thumbnail" alt="<%= photo[:name] %>" /></a>
   <% end %>
 </div>
 
@@ -19,7 +19,7 @@ title: Bildergalerie
 </div>
 
 <div class="slider">
-  <% new.slice(7,8).each do |photo| %>
-      <a href="<%="#image#{photo[:index]}"%>"><img src="<%=photo[:thumbnail]%>" alt="<%= photo[:name] %>" /></a>
+  <% new.slice(8,8).each do |photo| %>
+      <a href="<%="#image#{photo[:index]}"%>"><img src="<%=photo[:thumbnail]%>" class="thumbnail" alt="<%= photo[:name] %>" /></a>
   <% end %>
 </div>

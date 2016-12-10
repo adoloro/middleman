@@ -203,6 +203,11 @@ p {
 .slider {
     margin: 20px;
 }
+
+.thumbnail {
+    margin-right: 10px;
+}
+
 #images {
     width: 860px;
     height: 650px;
