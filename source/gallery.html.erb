@@ -2,13 +2,24 @@
 title: Bildergalerie
 ---
 
+<% gallery = %w(erde asteroid jupiter kometen mars merkur mond neptun planeten_groesse pluto saturn sonne sonnensystem sterne uranus venus) %>
+<% new = gallery.each_with_index.map{ |name, index| {name: name, source: "img/galerie/#{name}.jpg", thumbnail:"img/galerie/thumbnails/#{name}_thumbnail.jpg", index: index}} %>
+
 <h1 class="header">Bildergalerie</h1>
-<div id="slider">
-  <a href="#image1">1</a>
-  <a href="#image2">2</a>
+<div class="slider">
+  <% new.slice(0,8).each do |photo| %>
+      <a href="<%="#image#{photo[:index]}"%>"><img src="<%=photo[:thumbnail]%>" alt="<%= photo[:name] %>" /></a>
+  <% end %>
 </div>
 
 <div id="images">
-  <img id="image1" src="img/galerie/asteroid.jpg" />
-  <img id="image2" src="img/galerie/mars.jpg" />
+  <% gallery.each_with_index do |name, index| %>
+      <img id="<%="image#{index}"%>" src="<%=("img/galerie/#{name}.jpg") %>" alt="<%= name %>" />
+  <% end %>
+</div>
+
+<div class="slider">
+  <% new.slice(7,8).each do |photo| %>
+      <a href="<%="#image#{photo[:index]}"%>"><img src="<%=photo[:thumbnail]%>" alt="<%= photo[:name] %>" /></a>
+  <% end %>
 </div>

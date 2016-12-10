@@ -196,24 +196,27 @@ p {
 
 
 
-/* Slider
+/* CSS3 Slider
     http://www.deluxeblogtips.com/image-slider-pure-css3/
 */
+
+.slider {
+    margin: 20px;
+}
 #images {
-    width: 400px;
-    height: 250px;
+    width: 860px;
+    height: 650px;
     overflow: hidden;
     position: relative;
-
     margin: 20px auto;
 }
 #images img {
-    width: 400px;
-    height: 250px;
+    width: 860px;
+    height: auto; /* http://stackoverflow.com/questions/787839/resize-image-proportionally-with-css */
 
     position: absolute;
     top: 0;
-    left: -400px;
+    left: -860px;
     z-index: 1;
     opacity: 0;
 
@@ -230,13 +233,9 @@ p {
 #images img:first-child {
     left: 0;
 }
-#slider a {
-    text-decoration: none;
-    background: #E3F1FA;
-    border: 1px solid #C6E4F2;
-    color: #222;
-    padding: 4px 6px;
+.thumbnail {
+    padding: 10px;
 }
-#slider a:hover {
-    background: #C6E4F2;
+.thumbnail a {
+    text-decoration: none;
 }
