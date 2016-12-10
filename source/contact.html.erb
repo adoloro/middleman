@@ -1,0 +1,58 @@
+---
+title: Kontakt
+---
+
+<h1 class="header">Kontakt</h1>
+
+<div class="contact">
+  <div id="contactwrapper">
+    <div id="contact-area">
+      <form method="post" action="contactengine.php">
+
+        <div class="contact-detail">
+          <label for="salutation">Anrede:</label>
+
+          <label><input type="radio" name="salutation" id="male" value="male" checked>Herr</label>
+          <label><input type="radio" name="salutation" id="female" value="female">Frau</label>
+        </div>
+
+
+        <div class="contact-detail">
+          <label for="Name">Name:</label>
+          <input type="text" name="Name" id="Name"/>
+        </div>
+
+
+        <div class="contact-detail">
+          <label for="Email">Email:</label>
+          <input type="text" name="Email" id="Email"/>
+        </div>
+
+        <div class="contact-detail">
+          <label for="Newsletter">Newsletter:</label>
+          <input type="checkbox" name="newsletter" id="Newsletter" value="Newsletter"/>
+        </div>
+
+
+        <div class="contact-detail">
+          <label for="subject">Betreff:</label>
+          <input type="text" name="subject" id="subject"/>
+
+        </div>
+
+
+        <div class="contact-detail">
+          <label for="message">Nachricht:</label><br/>
+          <textarea name="message" rows="40" cols="20" id="message"></textarea>
+        </div>
+
+        <div class="contact-detail">
+          <input type="submit" name="submit" value="Abschicken" class="submit-button"/>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
