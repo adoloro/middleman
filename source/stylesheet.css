@@ -35,23 +35,15 @@ p {
 }
 
 .header {
-    color: white;
-    font-size: 30px;
-    background: black;
+    box-sizing: border-box;
     width: 100%;
     margin-top: 1px;
     padding: 10px;
-    box-sizing: border-box;
+    color: #fff;
+    background: #000;
+    font-size: 30px;
 }
 
-#aside .header {
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    background: #fff;
-    color: #000;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
-}
 
 #contentwrap {
     display: table;
@@ -125,21 +117,19 @@ p {
     border-top-right-radius: 25px;
 }
 
+
+/*    Aside   */
+
 .aside {
     width: 200px;
-    text-align: right;
+    padding-left: 20px;
+    height: 100%;
 }
 
-#menu {
-}
-
-#aside {
-    overflow: hidden;
-}
-
-#aside h2 {
+.right-header {
     font-size: 30px;
     margin-bottom: 10px;
+    text-align: right;
     box-sizing: border-box;
     padding-right: 10px;
     background: #fff;
@@ -148,27 +138,42 @@ p {
     border-top-left-radius: 25px;
 }
 
-#aside a {
-    font-size: 12px;
-    border-radius: 12px;
-    padding: 5px;
-    text-decoration: none;
-}
-
 .shelf {
-    background: #111;
-    float: right;
-    width:80%;
+    background: #222;
+    padding: 20px 10px 10px;
     color: #fff;
     border-top-left-radius: 25px;
+    overflow: hidden;
 }
 
-a.link, a.link:visited {
+.book {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.book-details {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.book-cover {
+    margin-bottom: 10px;
+}
+
+.order {
+    margin-bottom: 20px;
+}
+
+.order a, .order a:visited {
+    font-size: 12px;
+    border-radius: 12px;
+    padding: 5px 40px;
+    text-decoration: none;
     background: #000;
     color: #fff;
 }
 
-a.link:hover {
+.order a:hover {
     background: #fff;
     color: #000;
 }
