@@ -143,6 +143,7 @@ p {
     padding: 20px 10px 10px;
     color: #fff;
     border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
     overflow: hidden; /*  clearfix  */
 }
 
